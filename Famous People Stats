@@ -1,0 +1,48 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE famous_people (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, profession TEXT, songs TEXT, awards TEXT);
+
+INSERT INTO famous_people VALUES (1, 'Jeon Jungkook', 26, 'Golden Idol', 'Still with you', 'yes');
+INSERT INTO famous_people VALUES (2, 'Park Jimin', 28, 'Singer', 'Promise','yes');
+INSERT INTO famous_people VALUES (3, 'SUGA', 30, 'Rapper/Singer','Set me free','yes');
+
+CREATE TABLE vocal_abilities (id INTEGER PRIMARY KEY, name TEXT, lowest_key TEXT, highest_key TEXT, vocal_range TEXT);
+INSERT INTO vocal_abilities VALUES (1, 'Jeon Jungkook', 'G2','B5', 'tenor');
+INSERT INTO vocal_abilities VALUES (2, 'Park Jimin', 'A2', 'Bb5','tenor');
+INSERT INTO vocal_abilities VALUES (3, 'SUGA' , 'Eb2', 'Bb5', 'baritone');
+
+SELECT famous_people.name, vocal_abilities.lowest_key
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+SELECT famous_people.name, vocal_abilities.highest_key
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+SELECT famous_people.name, vocal_abilities.vocal_range
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+SELECT famous_people.profession, vocal_abilities.name
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+SELECT famous_people.age, vocal_abilities.lowest_key
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+SELECT famous_people.songs, vocal_abilities.name
+FROM famous_people 
+JOIN vocal_abilities
+ON famous_people.name = vocal_abilities.name;
+
+CREATE TABLE physical_image (id INTEGER PRIMARY KEY, name TEXT, blood_type TEXT, eye_color TEXT, height INTEGER);
+
+INSERT INTO physical_image VALUES (1, 'Jungkook', 'A', 'brown', '178cm');
+INSERT INTO physical_image VALUES (2, 'Jimin', 'A', 'brown', '175cm');
+INSERT INTO physical_image VALUES (3, 'SUGA', 'O', 'brown', '176cm');
