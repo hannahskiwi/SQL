@@ -1,0 +1,21 @@
+CREATE TABLE decor (id INTEGER PRIMARY KEY, item_type TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO decor VALUES (1, "shelves", 10 ,50.0);
+INSERT INTO decor VALUES (2, "dressers", 6 , 300.0);
+INSERT INTO decor VALUES (3, "mirrors", 25 , 35.0);
+INSERT INTO decor VALUES (4, "beds", 5 , 900.0 );
+INSERT INTO decor VALUES (5, "bedding", 100 , 20.0);
+INSERT INTO decor VALUES (6, "plants", 20, 5.0);
+INSERT INTO decor VALUES (7, "frames", 300, 12.0);
+INSERT INTO decor VALUES (8, "vases", 75, 32.0);
+INSERT INTO decor VALUES (9, "lamps", 87, 11.0);
+INSERT INTO decor VALUES (10, "knick knak toys", 1000, 2.0);
+INSERT INTO decor VALUES (11, "rugs", 52, 200.0);
+INSERT INTO decor VALUES (12, "place mats", 202, 3.0);
+INSERT INTO decor VALUES (13, "faux vines", 120, 2.0);
+INSERT INTO decor VALUES (14, "candles", 350, 2.0);
+INSERT INTO decor VALUES (15, "clocks", 75, 59.0);
+
+SELECT * FROM decor ORDER BY price;
+SELECT SUM(quantity) FROM decor;
+SELECT * FROM decor;
