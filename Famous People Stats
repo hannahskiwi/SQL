@@ -1,3 +1,6 @@
+In this project, you’re going to make your own table with some small set of “famous people”, 
+then make more tables about things they do and join those to create nice human readable lists.
+
 /* Create table about the people and what they do here */
 
 CREATE TABLE famous_people (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, profession TEXT, songs TEXT, awards TEXT);
