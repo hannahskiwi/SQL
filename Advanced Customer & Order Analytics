@@ -1,3 +1,6 @@
+#For this project, I used SQLiteStudio for the first time and used data to analyze the following information.
+
+
 #1.Which locations in New York received at least 3 orders in January, and how many orders did they each receive? 
 
 SELECT distinct location, count(orderID)
