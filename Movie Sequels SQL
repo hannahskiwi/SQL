@@ -1,3 +1,5 @@
+#For this project, I analyzed data about movies and their sequels.
+
 CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     released INTEGER,
